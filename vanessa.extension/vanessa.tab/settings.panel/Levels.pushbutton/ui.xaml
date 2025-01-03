@@ -1,0 +1,21 @@
+<Window xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av" Width="300
+        "
+        Title="Hello World"
+        >
+    <StackPanel HorizontalAlignment="Center" Margin="20,20,20,20" VerticalAlignment="Center">
+        <ProgressBar RenderTransformOrigin="0.5,0.5">
+            <ProgressBar.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleY="0.084"/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="0.332"/>
+                </TransformGroup>
+            </ProgressBar.RenderTransform>
+        </ProgressBar>
+        <Label Content="Enter your name inside the box below:"/>
+        <TextBox x:Name="textbox" TextWrapping="Wrap" FontSize="24"  FontWeight="Heavy" VerticalAlignment="Center" Padding="10"/>
+        <Button Content="Say the Name" Margin="0,10,0,10" Click="say_hello"/>
+    </StackPanel>
+</Window>
